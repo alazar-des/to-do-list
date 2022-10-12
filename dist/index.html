@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <ul>
+        <li class="toggle-menu"><img src="../dist/asset/menu.svg" alt="toggle menu"></li>
+        <li class="home"><img src="../dist/asset/home-outline.svg" alt="home icon"></li>
+        <li class="add-task"><img src="../dist/asset/plus.svg" alt="add task icon"></li>
+        <li class="completed"><img src="../dist/asset/check-circle-outline.svg" alt="completed tasks"></li>
+        <li class="profile">A</li>
+      </ul>
+    </div>
+    <div class="menu">
+      <ul>
+        <li class="inbox"><img src="../dist/asset/inbox-outline.svg" alt="inbox">inbox</li>
+        <li class="today"><img src="../dist/asset/calendar-today-outline.svg" alt="today">today</li>
+        <li class="upcomming"><img src="../dist/asset/calendar-month-outline.svg" alt="upcomming">upcomming</li>
+      </ul>
+      <div class="projects">
+        <div class="projects-heading">
+          <img src="../dist/asset/chevron_right_FILL0_wght400_GRAD0_opsz48.svg" alt="expand projects">
+          <h4>projects</h4>
+          <img src="../dist/asset/plus_black.svg" alt="add project" class="add">
+        </div>
+        <ul></ul>
+      </div>
+    </div>
+    <div class="main"></div>
+    <section class="add-task-form">
+      <form action="index.html">
+        <input type="text" name="taskName" id="task-name" placeholder="Task name">
+        <input type="text" name="description" id="description" placeholder="Description">
+        <div class="project-info">
+          <input type="date" name="duedate" id="duedate">
+          <select name="project" id="project">
+            <option value="inbox">inbox</option>
+          </select>
+          <select name="priority" id="priority">
+            <option value="1">priority 1</option>
+            <option value="2">priority 2</option>
+            <option value="3">priority 3</option>
+            <option value="4">priority 4</option>
+          </select>
+        </div>
+        <div class="buttons">
+          <button class="cancel" type="button">Cancel</button>
+          <button class="submit" type="submit">Add Task</button>
+        </div>
+      </form>
+    </section>
+    <section class="update-task-form">
+      <form action="index.html">
+        <input type="text" name="taskName" id="task-name" placeholder="Task name">
+        <input type="text" name="description" id="description" placeholder="Description">
+        <div class="project-info">
+          <input type="date" name="duedate" id="duedate">
+          <select name="priority" id="priority">
+            <option value="1">priority 1</option>
+            <option value="2">priority 2</option>
+            <option value="3">priority 3</option>
+            <option value="4">priority 4</option>
+          </select>
+        </div>
+        <div class="buttons">
+          <button class="cancel" type="button">Cancel</button>
+          <button class="submit" type="submit">Update</button>
+        </div>
+      </form>
+    </section>
+    <section class="add-project-form">
+      <h3>Add project</h3>
+      <form action="index.html">
+        <input type="text" name="projectName" autofocus>
+        <div class="buttons">
+          <button class="cancel" type="button">Cancel</button>
+          <button class="submit" type="submit">Add Project</button>
+        </div>
+      </form>
+    </section>
+    <section class="update-project-form">
+      <h3>Add project</h3>
+      <form action="index.html">
+        <input type="text" name="projectName" autofocus>
+        <div class="buttons">
+          <button class="cancel" type="button">Cancel</button>
+          <button class="submit" type="submit">Update</button>
+        </div>
+      </form>
+    </section>
+  </div>
+  <div class="popup-hidder"></div>
+</body>
+</html>

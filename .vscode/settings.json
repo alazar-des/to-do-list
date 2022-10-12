@@ -1,0 +1,8 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "liveServer.settings.port": 5501
+}
